@@ -4,7 +4,16 @@
 using namespace std;
 
 void processItem(string item) {
-  
+    int inWarehouse;
+    cout << "\nIs " << item << " available in warehouse? (1 = Yes, 0 = No): ";
+    cin >> inWarehouse;
+
+    if (inWarehouse == 1) {
+        cout << "Item " << item << " packed with other orders in warehouse.\n";
+    } else {
+        cout << "Contacting seller to ship item: " << item << endl;
+        cout << "Seller sends item " << item << " to customer.\n";
+    }
 }
 void goodsAndOrders() {
 
