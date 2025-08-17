@@ -16,7 +16,10 @@ void processItem(string item) {
     }
 }
 void goodsAndOrders() {
-
+    cout << "Sending warehouse goods to customer...\n";
+    cout << "Customer collects goods.\n";
+    cout << "Seller confirms customer received the order.\n";
+    cout << "Return (RTN) → End process.\n";
 }
 
 int main() {
