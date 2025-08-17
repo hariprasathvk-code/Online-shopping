@@ -16,6 +16,7 @@ void processItem(string item) {
     }
 }
 void goodsAndOrders() {
+    cout << "\n--- Goods and Orders (GAO) ---\n";
     cout << "Sending warehouse goods to customer...\n";
     cout << "Customer collects goods.\n";
     cout << "Seller confirms customer received the order.\n";
@@ -25,15 +26,15 @@ void goodsAndOrders() {
 int main() {
     cout << "    Order Processing System    \n";
 
-    // int n;
-    // cout << "Enter number of items in the order: ";
-    // cin >> n;
-
-    // vector<string> items(n);
-    // for (int i = 0; i < n; i++) {
-    //     cout << "Enter name of item " << i + 1 << ": ";
-    //     cin >> items[i];
-    // }
+    int n;
+    cout << "Enter number of items in the order: ";
+    cin >> n;
+1
+    vector<string> items(n);
+    for (int i = 0; i < n; i++) {
+        cout << "Enter name of item " << i + 1 << ": ";
+        cin >> items[i];
+    }
 
     cout << "\nOrder placed successfully.\n";
 
