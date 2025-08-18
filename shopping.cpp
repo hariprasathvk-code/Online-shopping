@@ -16,11 +16,10 @@ void processItem(string item) {
     }
 }
 void goodsAndOrders() {
-    cout << "\n--- Goods and Orders (GAO) ---\n";
+    cout << "\n  Goods and Orders \n";
     cout << "Sending warehouse goods to customer...\n";
     cout << "Customer collects goods.\n";
     cout << "Seller confirms customer received the order.\n";
-    cout << "Return (RTN) → End process.\n";
 }
 
 int main() {
@@ -29,7 +28,7 @@ int main() {
     int n;
     cout << "Enter number of items in the order: ";
     cin >> n;
-1
+
     vector<string> items(n);
     for (int i = 0; i < n; i++) {
         cout << "Enter name of item " << i + 1 << ": ";
@@ -42,6 +41,6 @@ int main() {
         processItem(items[i]); 
     }
     goodsAndOrders();
-    cout << "\nOrder process completed. STOP.\n";
+    cout << "\nOrder process completed.\n";
     return 0;
 }
